@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: redis-elasticache-poc
+
+  data:
+    redis:
+      # ElastiCacheのエンドポイントをここに設定してください
+      # 例: your-cluster.abc123.ng.0001.apne1.cache.amazonaws.com
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 3000ms
+
+      # クラスターモードを使用する場合は以下をコメント解除
+      # cluster:
+      #   nodes:
+      #     - ${REDIS_CLUSTER_NODE_1:node1.cache.amazonaws.com:6379}
+      #     - ${REDIS_CLUSTER_NODE_2:node2.cache.amazonaws.com:6379}
+
+      # 認証が必要な場合
+      # password: ${REDIS_PASSWORD:}
+
+      jedis:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+          max-wait: -1ms
+
+logging:
+  level:
+    com.example.redispoc: DEBUG
+    org.springframework.data.redis: DEBUG
