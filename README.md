@@ -9,6 +9,7 @@ AWS ElastiCache for Redis OSSに接続するSpring Bootアプリケーション�
 | **[INDEX.md](INDEX.md)** | 📑 全ドキュメントの索引と目的別ガイド |
 | **[README.md](README.md)** | このファイル - プロジェクト概要とローカル開発手順 |
 | **[REDIS_GUIDE.md](REDIS_GUIDE.md)** | 📘 Redis利用ガイド（基本概念、ルール、ベストプラクティス） |
+| **[ELASTICACHE_CONFIG_GUIDE.md](ELASTICACHE_CONFIG_GUIDE.md)** | ⚙️ ElastiCache構成ガイド（クラスター、ノード、用途別推奨） |
 | **[ARCHITECTURE.md](ARCHITECTURE.md)** | 🏗️ アーキテクチャ図とシーケンス図（Mermaid） |
 | **[DEPLOYMENT_SUMMARY.md](DEPLOYMENT_SUMMARY.md)** | 📖 完全なデプロイメントレポート（実行コマンドとテスト結果） |
 | **[ELASTICACHE_SETUP.md](ELASTICACHE_SETUP.md)** | AWS ElastiCache for Redis OSS作成の完全ガイド |
