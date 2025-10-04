@@ -177,14 +177,13 @@ sequenceDiagram
 
     alt データが存在
         Redis-->>App: "John Doe"
-        deactivate Redis
         App-->>User: 200 OK<br/>{"success": true, "message": "Data found", "data": "John Doe"}
     else データが存在しない
         Redis-->>App: nil
-        deactivate Redis
         App-->>User: 200 OK<br/>{"success": true, "message": "No data found", "data": null}
     end
 
+    deactivate Redis
     deactivate App
 ```
 
@@ -204,18 +203,16 @@ sequenceDiagram
 
     alt TTLが設定されている
         Redis-->>App: 245 (残り秒数)
-        deactivate Redis
         App-->>User: 200 OK<br/>{"success": true, "message": "TTL: 245 seconds", "data": 245}
     else TTLが設定されていない
         Redis-->>App: -1
-        deactivate Redis
         App-->>User: 200 OK<br/>{"success": true, "message": "No expiration set", "data": -1}
     else キーが存在しない
         Redis-->>App: -2
-        deactivate Redis
         App-->>User: 200 OK<br/>{"success": true, "message": "Key does not exist", "data": -2}
     end
 
+    deactivate Redis
     deactivate App
 ```
 
