@@ -9,10 +9,11 @@
 ### 初めての方へ
 
 1. **[README.md](README.md)** - プロジェクト概要を把握
-2. **[ARCHITECTURE.md](ARCHITECTURE.md)** - 構成図で全体を理解 🎨
-3. **[DEPLOYMENT_SUMMARY.md](DEPLOYMENT_SUMMARY.md)** - 実際のデプロイメント事例を確認
-4. **[ELASTICACHE_SETUP.md](ELASTICACHE_SETUP.md)** - ElastiCacheを自分で作成
-5. **[DEPLOY.md](DEPLOY.md)** - Beanstalkにデプロイ
+2. **[REDIS_GUIDE.md](REDIS_GUIDE.md)** - Redis基礎知識を学ぶ 📘
+3. **[ARCHITECTURE.md](ARCHITECTURE.md)** - 構成図で全体を理解 🎨
+4. **[DEPLOYMENT_SUMMARY.md](DEPLOYMENT_SUMMARY.md)** - 実際のデプロイメント事例を確認
+5. **[ELASTICACHE_SETUP.md](ELASTICACHE_SETUP.md)** - ElastiCacheを自分で作成
+6. **[DEPLOY.md](DEPLOY.md)** - Beanstalkにデプロイ
 
 ---
 
@@ -36,7 +37,30 @@
 
 ---
 
-### 2. [ARCHITECTURE.md](ARCHITECTURE.md) - アーキテクチャ図とシーケンス図 🎨 ビジュアル
+### 2. [REDIS_GUIDE.md](REDIS_GUIDE.md) - Redis利用ガイド 📘 基礎知識
+
+**こんな時に読む:**
+- Redisの基本を知りたい
+- TTL、重複、データ型などのルールを理解したい
+- ベストプラクティスを学びたい
+- よくある疑問を解決したい
+
+**主な内容:**
+- **Redisの基本概念**（Key-Value ストア）
+- **データの保存と取得**（SET/GET/DEL）
+- **TTL（有効期限）**の仕組みと使い方
+- **重複とデータ上書き**のルール
+- **データの確認方法**（AWS Console、redis-cli）
+- **データ型**（String、List、Set、Hash、Sorted Set）
+- **ベストプラクティス**（命名規則、TTL設定、キャッシュ戦略）
+- **注意点と制限**（メモリ、永続性、レイテンシ）
+- **FAQ**（よくある質問と回答）
+
+**対象読者:** Redis初心者、基本ルールを確認したい人
+
+---
+
+### 3. [ARCHITECTURE.md](ARCHITECTURE.md) - アーキテクチャ図とシーケンス図 🎨 ビジュアル
 
 **こんな時に読む:**
 - システム構成を視覚的に理解したい
@@ -60,7 +84,7 @@
 
 ---
 
-### 3. [DEPLOYMENT_SUMMARY.md](DEPLOYMENT_SUMMARY.md) - 完全なデプロイメントレポート ⭐ おすすめ
+### 4. [DEPLOYMENT_SUMMARY.md](DEPLOYMENT_SUMMARY.md) - 完全なデプロイメントレポート ⭐ おすすめ
 
 **こんな時に読む:**
 - 実際にどうやってデプロイしたのか知りたい
@@ -79,7 +103,7 @@
 
 ---
 
-### 3. [ELASTICACHE_SETUP.md](ELASTICACHE_SETUP.md) - ElastiCache作成ガイド
+### 5. [ELASTICACHE_SETUP.md](ELASTICACHE_SETUP.md) - ElastiCache作成ガイド
 
 **こんな時に読む:**
 - AWS ElastiCache for Redis OSSを初めて作成する
@@ -99,7 +123,7 @@
 
 ---
 
-### 4. [DEPLOY.md](DEPLOY.md) - Elastic Beanstalkデプロイ手順
+### 6. [DEPLOY.md](DEPLOY.md) - Elastic Beanstalkデプロイ手順
 
 **こんな時に読む:**
 - Elastic Beanstalkにアプリケーションをデプロイしたい
@@ -120,7 +144,7 @@
 
 ---
 
-### 5. [PROGRESS.md](PROGRESS.md) - 進捗チェックリスト
+### 7. [PROGRESS.md](PROGRESS.md) - 進捗チェックリスト
 
 **こんな時に読む:**
 - プロジェクトの現在の進捗状況を知りたい
@@ -254,7 +278,7 @@ DEPLOYMENT_SUMMARY.md（問題事例） → ARCHITECTURE.md（構成確認） �
 ---
 
 **最終更新:** 2025年10月4日
-**ドキュメント数:** 6（INDEX, README, ARCHITECTURE, DEPLOYMENT_SUMMARY, ELASTICACHE_SETUP, DEPLOY, PROGRESS）
+**ドキュメント数:** 8（INDEX, README, REDIS_GUIDE, ARCHITECTURE, DEPLOYMENT_SUMMARY, ELASTICACHE_SETUP, DEPLOY, PROGRESS）
 **プロジェクト状態:** ✅ 完了
 
 ## 📊 図表インデックス
